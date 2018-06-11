@@ -44,4 +44,4 @@ Instagram login and User Post fetch with pagination, Block base structure, Swift
         })
     }
 
-**Note:** For non publish application, It will give a 20 photos. After successfully reviewed by instagram developer team it will give a all photos.
+**Note:** For non publish application, It will give a 20 photos. Once app reviewed by instagram developer team it will give a all photos for specific user.
