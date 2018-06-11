@@ -28,13 +28,14 @@ Instagram login and User Post fetch with pagination, Block base structure, Swift
     }
 
 **Get all user photo from instagram:**
-    @IBAction func getAllPhotos  {
-            if (UserDefaults.standard.value(forKey:"instUserID") != nil){
-                 getAllPhotosFromInstagram()
-            }else{
-                 print("user is not logged in")
-            }
-   }
+    
+    @IBAction func getAllPhotos {
+        if (UserDefaults.standard.value(forKey:"instUserID") != nil){
+            getAllPhotosFromInstagram()
+        }else{
+            print("user is not logged in")
+        }
+    }
 
     fileprivate func getAllPhotosFromInstagram() {
         InstagramUserProfile.shared.getInstagramPhotoWithUrl(comptionBlock: { (aryAllPhotos, status) in
