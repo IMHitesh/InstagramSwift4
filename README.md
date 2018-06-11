@@ -20,9 +20,6 @@ Instagram login and User Post fetch with pagination, Block base structure, Swift
     @IBAction func loginWithInstagram(_ sender:UIButton){        
                 instagramLogin = InstagramSharedVC.init(clientId: Constants.clientId, redirectUri: Constants.redirectUri) { (token, error) in
                 UserDefaults.standard.set(token ?? "", forKey: "instUserID")                 
-                self.instagramLogin.dismiss(animated: true, completion: {
-                    self.getAllPhotosFromInstagram()
-                })
             }
             present(UINavigationController(rootViewController: instagramLogin), animated: true)
     }
